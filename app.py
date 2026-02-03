@@ -21,5 +21,4 @@ st.dataframe(df.head())
 fig = px.line(df, x="x", y="y", title="Ejemplo de gráfico con Plotly Express", labels={"x": "Eje X", "y": "sin(x)"})
 fig.update_traces(line_color="blue", name="sin(x)")
 
-
-
+st.plotly_chart(fig, use_container_width=True)   
